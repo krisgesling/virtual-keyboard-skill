@@ -7,7 +7,7 @@ class VirtualKeyboard(MycroftSkill):
 
     @intent_file_handler('keyboard.virtual.intent')
     def handle_keyboard_virtual(self, message):
-        self.speak_dialog('keyboard.virtual')
+        self.gui.show_page("keyboard.qml")
 
 
 def create_skill():
